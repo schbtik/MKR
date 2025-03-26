@@ -1,5 +1,5 @@
 import sys
-from filter_text import read_file, filter_lines, write_file
+from textFiltration import read_file, filter_lines, write_file
 
 def main():
     """Основна функція: читає вхідний файл, фільтрує рядки та записує результат."""
