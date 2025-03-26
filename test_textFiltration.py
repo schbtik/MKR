@@ -1,5 +1,5 @@
 import pytest
-from textFiltration import read_from_file, filter_lines, write_to_file  # Здесь замените your_module на имя своего файла
+from textFiltration import read_from_file, filter_lines, write_to_file  
 
 # Фікстура для тестування
 @pytest.fixture
@@ -22,7 +22,7 @@ def test_filter_lines(sample_data):
 
 # Тест для write_to_file
 def test_write_to_file(tmp_path, sample_data):
-    output_file = tmp_path / "test.txt"  # tmp_path автоматически создаёт временные файлы и директории
+    output_file = tmp_path / "test.txt"  
     write_to_file(str(output_file), sample_data)  # записываем данные
     with open(str(output_file), "r") as f:
         lines = f.readlines()  # читаем из файла
